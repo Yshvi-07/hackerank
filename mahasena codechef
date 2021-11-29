@@ -1,0 +1,38 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int n;
+	cin>>n;
+	int a[n];
+	int d=0;
+	int c=0;
+   for(int i=1;i<=n;i++)
+   {
+       cin>>a[i];
+   }
+    for(int i=1;i<=n;i++)
+   {
+      
+       if(a[i]%2!=0)
+       {
+           d++;
+       }
+       else
+       {
+           c++;
+       }
+   }  
+   
+   if(d<c)
+   {
+     cout<<"READY FOR BATTLE";  
+   }
+   else
+   {
+       cout<<"NOT READY";
+   }
+   
+	return 0;
+}
