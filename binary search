@@ -1,0 +1,51 @@
+
+#include <iostream>
+
+using namespace std;
+
+int binarySearch(int a[],int n,int k)
+{
+    int start=0;
+    int end=n-1;
+    int mid;
+    mid=(start+end)/2;
+    while(start<=end)
+    {
+    if(k==a[mid])
+    {
+       return mid;
+    }
+   if(k>mid)
+    {
+        
+        start=mid+1;
+      
+    }
+    else
+    {
+        end=mid-1;
+    }
+    mid=(end+start)/2;
+    }
+   
+    return -1;
+   }
+
+
+int main()
+{
+    cout<<"Hello World";
+    int n;
+    int k;
+    int s=0;
+    cin>>n>>k;
+    int a[n];
+    for(int i=0;i<n;i++)
+    {
+        cin>>a[i];
+    }
+    s=binarySearch(a,n,k);
+    cout<<s<<endl;
+    
+    return 0;
+}
