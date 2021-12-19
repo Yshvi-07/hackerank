@@ -1,0 +1,36 @@
+#include<iostream>
+#include<string.h>
+using namespace std;
+using std::string;
+class Student {
+public:
+    string Name;
+    string Fathersname;
+    long Rollno;
+    //blueprint  or attributes
+    void Greetings(){
+        
+        std::cout<<"Name - "<<Name<<std::endl;
+        std::cout<<"Fathersname - "<<Fathersname<<std::endl;
+        std::cout<<"Rollno - "<<Rollno<<std::endl;
+        //methods as it helps to do a function again and again without copying and pasting
+    }
+    Student(string name,string fathersname,int rollno) {
+        Name = name;
+       Fathersname = Fathersname;
+        Rollno = rollno;
+    
+    }
+    
+};
+//creating object;
+int main()
+{  /* Student student1;
+    student1.Name = "Yasahsvi";
+    student1.Fathersname = "Manoj KUmar Singh";
+    student1.Rollno = 2000290310196;
+    student1.Greetings();*/
+    Student student1 = Student("Yasahsvi","Manoj KUmar Singh",2000290310196);
+    student1.Greetings();
+
+}
