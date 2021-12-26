@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	char ch;
+	//char chr=(a,e,i,o,u);
+	cin>>ch;
+	if(ch=='A'|| ch=='E' || ch=='O' || ch=='I' || ch=='U')
+	{
+	    cout<<"Vowel"<<endl;
+	}
+	else
+	{
+	    cout<<"Consonant"<<endl;
+	}
+	return 0;
+}
