@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int L,B;
+    cin>>L>>B;
+    //double area=0;
+    //double peri=0;
+    int Area=L*B;
+    int Peri=2*(L+B);
+    if(Area>Peri)
+    {
+       cout<<"Area"<<endl;
+       cout<<Area<<endl;
+       
+    }
+    else if(Peri>Area){
+        cout<<"Peri"<<endl;
+        cout<<Peri<<endl;
+        }
+    else //if(Peri==Area)
+    {
+        cout<<"Eq"<<endl;
+        cout<<Peri<<endl;
+        
+    }
+    
+    
+    
+  return 0;  
+    
+    
+    
+}
