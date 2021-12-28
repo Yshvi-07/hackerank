@@ -1,0 +1,59 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t>0)
+	{
+	   // int n;
+	   // cin>>n;
+	    int flag=0;
+	    int arr[5];
+	    
+	    
+	    
+	    
+	  for(int j=0;j<5;j++)
+	        
+	   {
+	     cin>>arr[j];
+	     if (arr[j]==1)
+	     {
+	         flag++;
+	     }
+	   }  
+	        
+	  
+	            
+	        
+	        if(flag==1)
+	        {
+	            cout<<"Junior Developer"<<endl;
+	        }
+	        else if(flag==2)
+	        {
+	            cout<<"Middle Developer"<<endl;
+	        }
+	        else if(flag==3)
+	        {
+	            cout<<"Senior Developer"<<endl;
+	        }
+	        else if(flag==4)
+	        {
+	            cout<<"Hacker"<<endl;
+	        }
+	        else if(flag==5)
+	        {
+	           cout<<"Jeff Dean"<<endl;
+	        }
+	        else {
+	            cout<<"Beginner"<<endl;
+	        }
+	    
+	
+	    t--;
+	}
+	return 0;
+}
