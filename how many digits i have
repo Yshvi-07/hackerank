@@ -1,0 +1,30 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	long n;
+	cin>>n;
+	int temp=n;
+	int x=0;
+	while(temp>0)
+	{
+	   temp=temp/10;
+	   x++;
+	   n--;
+	} 
+	   
+	  if(x>3)
+	   {
+	       cout<<"More than 3 digits"<<endl;
+	   }
+	   else 
+	   {
+	       cout<<x<<endl;
+	   }
+	
+    
+    //cout<<x<<endl;
+	return 0;
+}
+how many digits i have
