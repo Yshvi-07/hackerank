@@ -1,0 +1,33 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t>0)
+	{
+	    int n;
+	    int d=0;
+	    int x,temp;
+	    cin>>n;
+	    temp =n;
+	    while(temp>0)
+	    {
+	        x=temp%10;
+	        d=(d*10)+x;
+	        temp=temp/10;
+	        
+	    }
+	    if(n==d)
+	    {
+	        cout<<"wins"<<endl;
+	    }
+	    else
+	    {
+	        cout<<"loses"<<endl;
+	    }
+	    t--;
+	}
+	return 0;
+}
