@@ -1,0 +1,50 @@
+#include <iostream>
+#include <map>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t--)
+	{
+	    int n,d;
+	    cin>>n>>d;
+	    int  s=1;
+	    if(d>20)
+	    {
+	        cout<<n<<endl;
+	    }
+	    else{
+	        
+	    
+	   
+	 for(int i=1;i<=d;i++)
+	 
+	 {
+	    if(i<=10)
+	    {
+	        s=s*2;
+	    }
+	    else
+	    {
+	        s=s*3;
+	        
+	    }
+	    
+	 
+	 }
+	 if(n>s)
+	 
+	     cout<<s<<endl;
+	 
+	 else
+	 
+	     cout<<n<<endl;
+	    }
+	 }	    
+	
+	
+	return 0;
+}
+	 
