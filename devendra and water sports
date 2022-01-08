@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t>0)
+	{
+	    int z,y,a,b,c;
+	    cin>>z>>y>>a>>b>>c;
+	    int sum=0;
+	    sum=z-y;
+	    int d=a+b+c;
+	    if(sum>=d)
+	    {
+	        cout<<"YES"<<endl;
+	        
+	    }
+	    else
+	    {
+	        cout<<"NO"<<endl;
+	    }
+	    t--;
+	}
+	return 0;
+}
