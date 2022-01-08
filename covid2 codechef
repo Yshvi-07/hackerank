@@ -1,0 +1,19 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t>0)
+	{
+	    int r,p;
+	    int d=0;
+	    
+	    cin>>r>>p;
+	    d=((r+1)/2)*((p+1)/2);
+	    cout<<d<<endl;
+	   t--;
+	}
+	return 0;
+}
