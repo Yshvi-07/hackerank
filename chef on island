@@ -1,0 +1,41 @@
+#include <iostream>
+#include<algorithm>
+#include<bits/stdc++.h>
+using namespace std;
+
+int main() {
+	// your code goes here
+	int t;
+	cin>>t;
+	while(t>0)
+	{
+	    int x,y,x1,y1,d;
+	    cin>>x>>y>>x1>>y1>>d;
+	    float z=x/x1;
+	    float a=y/y1;
+	    int  minimum=0;
+	    if(z>a)
+	    {
+	        minimum=a;
+	        
+	    }
+	    else if(z<a)
+	    {
+	        minimum=z;
+	    }
+	    else
+	    {
+	        minimum=a;
+	    }
+	    if(minimum<d)
+	    {
+	        cout<<"NO"<<endl;
+	    }
+	    else
+	    {
+	        cout<<"Yes"<<endl;
+	    }
+	    t--;
+	}
+	return 0;
+}
