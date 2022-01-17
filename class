@@ -1,0 +1,75 @@
+#include <iostream>
+#include <sstream>
+#include<string.h>
+using namespace std;
+
+class Students{
+    private:
+    int age;
+    string first_name;
+    string last_name;
+    int std;
+    
+   public:
+   
+   
+    void set_age(int a)
+     {
+       age =a;
+       
+     }
+       int get_age()
+     {
+         return age;
+     }
+     void set_std(int b)
+     {
+         std = b;
+     }
+     int get_std(){
+         return std;
+     }
+     void set_first_name(string n1)
+     {
+        first_name =n1;
+     }
+     string get_first_name(){
+         return first_name;
+     }
+   
+    void set_last_name(string n2)
+     {
+        last_name =n2;
+     }
+    string get_last_name(){
+         return last_name;
+     }
+
+    string to_string()
+    {
+        stringstream ss;
+        ss<<age<<","<<first_name<<","<<last_name<<","<<std;
+        return ss.str();
+    }
+};
+
+int main(){
+    int age,std;
+    string first_name,last_name;
+    cin>>age>>first_name>>last_name>>std;
+    Students s1;
+    s1.set_age(age);
+    s1.set_std(std);
+    s1.set_first_name(first_name);
+    s1.set_last_name(last_name);
+    
+    cout<<s1.get_age()<<endl;
+     cout<<s1.get_last_name()<<", "<<s1.get_first_name()<<endl;
+    
+    
+    cout<<s1.get_std()<<endl;
+    cout<<endl;
+    cout<<s1.to_string();
+    return 0;
+}
+
